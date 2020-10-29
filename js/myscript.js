@@ -45,6 +45,7 @@ while (i < 3) {
     risultato = "gameover";
   }
 
+
   i++;
 }
 
@@ -55,15 +56,13 @@ if (risultato == "gameover"){
   console.log("game over", arrayNumUtente.length)
 
 
+// se utente raggiunge limite di 84 numeri : hai vinto
+
+// se numero utente diverso da numeri computer : utente inserisce un altro numero
 
 
-// CICLO
-// se numero utente è uguale a numeri computer: game over
-  // outuput: game over + numero di volte che utente ha inserito numero diverso
 
-  // se utente raggiunge limite di 84 numeri : hai vinto
 
-  // se numero utente diverso da numeri computer : utente inserisce un altro numero
 
 
 
