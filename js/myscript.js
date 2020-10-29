@@ -53,7 +53,7 @@ console.log(arrayNumUtente);
 
 
 if (risultato == "gameover"){
-  console.log("game over", arrayNumUtente.length)
+  console.log("game over", arrayNumUtente.length);
 }
 
 // se utente raggiunge limite di 84 numeri : hai vinto
