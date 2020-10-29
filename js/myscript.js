@@ -34,13 +34,13 @@ var i = 0;
 while (i < 3) {
 
   var numUtente = arrayNumUtente[i];
-  // numUtente = parseInt(prompt("inserisci un numero tra 1 e 100"));
+  numUtente = parseInt(prompt("inserisci un numero tra 1 e 100"));
   // numeri utente devono essere diversi tra loro
   if(arrayNumUtente.indexOf(numUtente) === -1){
     arrayNumUtente.push(numUtente);
   }
-  // se numero utente è uguale a numeri computer: game over
-  if (numUtente == numPc){
+  // se numero utente è all'interno di array computer: game over
+  if (arrayNumPc.includes(numUtente)){
     // outuput: game over + numero di volte che utente ha inserito numero diverso da pc
     risultato = "gameover";
   }
