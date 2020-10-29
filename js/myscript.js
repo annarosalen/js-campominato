@@ -27,7 +27,6 @@ console.log(arrayNumPc);
 
 var arrayNumUtente = [];
 
-var risultato = "win";
 
 // chiedere all’utente (100 - 16) (3 prova) volte di inserire un numero alla volta, sempre compreso tra 1 e 100.
 var i = 0;
@@ -36,29 +35,28 @@ while (i < 3) {
   var numUtente = arrayNumUtente[i];
   numUtente = parseInt(prompt("inserisci un numero tra 1 e 100"));
   // numeri utente devono essere diversi tra loro
-  if(arrayNumUtente.indexOf(numUtente) === -1){
+  if(arrayNumUtente.includes(numUtente)){
+    alert("hai già inserito questo numero!");
+    // se numero utente è all'interno di array computer: game over
+  }else if(arrayNumPc.includes(numUtente)){
+      // outuput: game over + numero di volte che utente ha inserito numero diverso da pc
+      console.log("game over", arrayNumUtente.length);
+    break;
+  }else{
     arrayNumUtente.push(numUtente);
   }
-  // se numero utente è all'interno di array computer: game over
-  if (arrayNumPc.includes(numUtente)){
-    // outuput: game over + numero di volte che utente ha inserito numero diverso da pc
-    risultato = "gameover";
-  }
-
 
   i++;
 }
 
 console.log(arrayNumUtente);
 
+// se numero utente diverso da numeri computer : utente inserisce un altro numero
 
-if (risultato == "gameover"){
-  console.log("game over", arrayNumUtente.length);
-}
 
 // se utente raggiunge limite di 84 numeri : hai vinto
 
-// se numero utente diverso da numeri computer : utente inserisce un altro numero
+
 
 
 
