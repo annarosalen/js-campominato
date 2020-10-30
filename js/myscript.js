@@ -66,7 +66,7 @@ function functionUtente(num1, num2){
 
   // se utente raggiunge limite di 84 numeri : hai vinto
   if  (arrayNumUtente.length === 4){
-    console.log("hai vinto",arrayNumUtente.length);
+    return "hai vinto" + " " + arrayNumUtente.length
   }
 
 
