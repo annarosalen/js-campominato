@@ -26,12 +26,7 @@ function functionRandom(numMin, numMax) {
 }
 
 
-
 // BONUS************************* (gli altri livelli su mybonus.js)
-
-
-
-
 
 // CICLO
 
@@ -71,9 +66,6 @@ function functionUtente(num1, num2, giocate){
 } //fine functionUtente
 
 // BONUS************************* (gli altri livelli su mybonus.js)
-
-
-
 
 
 
