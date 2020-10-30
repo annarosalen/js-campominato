@@ -9,6 +9,7 @@ var difficile = document.getElementById("livello-difficile");
 // cosa succede ad ogni livello
 facile.addEventListener('click',
   function (){
+    // azzero variabili per nuova giocata
     arrayNumUtente = [];
     arrayNumPc = [];
     // difficoltà zero (da 1 a 100)
@@ -19,6 +20,7 @@ facile.addEventListener('click',
 
 medio.addEventListener('click',
   function () {
+    // azzero variabili per nuova giocata
     arrayNumUtente = [];
     arrayNumPc = [];
     // difficoltà uno ( da 1 a 80)
@@ -29,6 +31,7 @@ medio.addEventListener('click',
 
 difficile.addEventListener('click',
   function (){
+    // azzero variabili per nuova giocata
     arrayNumUtente = [];
     arrayNumPc = [];
     // difficoltà due ( da 1 a 50)
