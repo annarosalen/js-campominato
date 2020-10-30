@@ -29,8 +29,7 @@ function functionRandom(numMin, numMax) {
 
 // BONUS************************* (gli altri livelli su mybonus.js)
 
-// difficoltà zero range di numPc( da 1 a 100)
-console.log(functionRandom(1,100));
+
 
 
 
@@ -38,11 +37,11 @@ console.log(functionRandom(1,100));
 
 var arrayNumUtente = [];
 
-function functionUtente(num1, num2){
+function functionUtente(num1, num2, giocate){
 
   // chiedere all’utente (100 - 16) volte di inserire un numero alla volta, sempre compreso tra 1 e 100.
   var i = 0;
-  while (i < 4) {
+  while (i < giocate) {
 
     var numUtente = arrayNumUtente[i];
     numUtente = parseInt(prompt("inserisci un numero tra 1 e 100 NB: non puoi ripetere un numero già scelto in precendenza"));
@@ -65,14 +64,15 @@ function functionUtente(num1, num2){
   }
 
   // se utente raggiunge limite di 84 numeri : hai vinto
-  if  (arrayNumUtente.length === 4){
+  if  (arrayNumUtente.length === giocate){
     return "hai vinto" + " " + arrayNumUtente.length
   }
 
-
 } //fine functionUtente
 
-console.log(functionUtente(1,100))
+// BONUS************************* (gli altri livelli su mybonus.js)
+
+
 
 
 
